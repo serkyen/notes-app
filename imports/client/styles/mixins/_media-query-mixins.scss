@@ -1,0 +1,15 @@
+// @mixin funkyBorder ($borderSize: 10px, $border-color: orange) {
+//   border: $borderSize solid $border-color;
+//
+//
+// }
+// @mixin funkyBackground ($backgroundColor: green) {
+//   background-color: $backgroundColor;
+//
+// }
+
+@mixin desktop {
+  @media (min-width: 50rem) {
+    @content;
+  }
+}
