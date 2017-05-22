@@ -15,14 +15,15 @@ export const NoteList = (props) => {
     <div className="item-list">
       <NoteListHeader/>
       {props.notes.length === 0 ? <NoteListEmptyItem/> : undefined }
-
-      NoteList {props.notes.length}
       {props.notes.map((note) => {
         return <NoteListItem key={note._id} note={note}/>
       })}
+
     </div>
   );
 };
+//NoteList {props.notes.length}
+
 
 NoteList.PropTypes = {
   notes: React.PropTypes.array.isRequired
