@@ -7,6 +7,7 @@ import {browserHistory} from 'react-router';
 import {routes, onAuthChange} from '../imports/routes/routes';
 import '../imports/startup/simple-schema-configuration';
 
+
 Tracker.autorun(() => {
   const isAuthenticated = !!Meteor.userId();
   const currentPagePrivacy = Session.get('currentPagePrivacy');
